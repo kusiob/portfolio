@@ -217,6 +217,11 @@ footer p {
 
 }
 
+@media screen and (max-width: 500px) {
+footer, header, .photos, .aboutme {
+  width: 100%;
+}
+}
 /* ANIMATION COFFEE*/
 .cls-36 {
   -webkit-animation: slide-top 3s ease-in-out 1s infinite alternate-reverse forwards;
