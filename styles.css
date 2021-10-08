@@ -75,21 +75,23 @@ header h2 {
   color: #ff4b33;
 }
 
-.girl {
-  width: 50px;
-}
-
 .button {
   background-color: #ff4b33;
   color: #fcefde;
   padding: 4px;
   text-decoration: none;
-  width: 90px;
+  width: 100%;
   display: block;
   text-align: center;
   margin-inline: auto;
   margin-block: 8px;
   cursor: url(cursor.png), pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #0053df;
 }
 
 .big p {
@@ -128,17 +130,52 @@ h3 {
 .photos {
   width: 80vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-inline: auto;
   margin-block: 30px;
   padding: 0px;
+  position: relative;
 }
 
 .photo {
   width: 333px;
   margin-block: 10px;
 }
+
+figure {
+  margin: 0;
+  padding: 0;
+  height: 333px;
+}
+
+figcaption {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  top: -333px;
+  left: -30px;
+  padding: 10px;
+  background-color: #0053df;
+  color: #fcefde;
+  font-weight: 600;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.projects {
+background-color: #0053df;
+color: #fcefde;
+width: 80vw;
+margin-inline: auto;
+font-size: 16px;
+position: relative;
+line-height: 150%;
+height: 300px;
+}
+
+
 
 .aboutme {
   background-color: #ff4b33;
@@ -155,6 +192,9 @@ h3 {
   padding: 20px 30px 30px 100px;
 }
 
+.text-about h2 {
+  font-size: 50px;
+}
 .small-f {
   font-size: 12px;
   color: #0053df;
@@ -165,18 +205,6 @@ h3 {
   padding-inline: 60px;
 }
 
-.portrait {
-  background-color: #fcefde;
-  border-radius: 50%;
-  width: 200px;
-  position: absolute;
-  top: 30px;
-  right: 100px;
-}
-
-.portrait:hover {
-  background-color: #0053df;
-}
 
 .blue {
   color: #0053df;
@@ -200,9 +228,6 @@ footer p {
 }
 
 @media screen and (max-width: 992px) {
-  .portrait {
-    display: none;
-  }
 
   .text-about {
     width: 400px;
@@ -239,8 +264,8 @@ footer p {
 
 /* ANIMATION COFFEE*/
 .cls-36 {
-  -webkit-animation: slide-top 3s ease-in-out 1s infinite alternate-reverse forwards;
-  animation: slide-top 3s ease-in-out 1s infinite alternate-reverse forwards;
+  -webkit-animation: slide-top 2s ease-in-out 1s infinite alternate-reverse forwards;
+  animation: slide-top 2s ease-in-out 1s infinite alternate-reverse forwards;
 }
 
 @-webkit-keyframes slide-top {
