@@ -219,6 +219,23 @@ figcaption {
   line-height: 300%;
 }
 
+.presentation {
+  background-color: #0053df;
+  color: #fcefde;
+  padding: 0 10px;
+  margin: 1px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: url(cursor.png), pointer;
+  font-size: 12px;
+}
+
+.presentation:hover {
+  background-color: #fcefde;
+  color: #ff4b33;
+}
+
 footer {
   background-color: #0053df;
   width: 80vw;
