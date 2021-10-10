@@ -166,17 +166,16 @@ figcaption {
 }
 
 .projects {
-background-color: #0053df;
-color: #fcefde;
-width: 80vw;
-margin-inline: auto;
-font-size: 16px;
-position: relative;
-line-height: 150%;
-height: 300px;
+  background-color: #0053df;
+  color: #fcefde;
+  width: 50vw;
+  margin-inline: auto;
+  font-size: 14px;
+  position: relative;
+  line-height: 150%;
+  padding: 15px;
+  margin-block: 30px;
 }
-
-
 
 .aboutme {
   background-color: #ff4b33;
@@ -189,13 +188,14 @@ height: 300px;
 }
 
 .text-about {
-  width: 700px;
-  padding: 20px 30px 30px 100px;
+  width: 100%;
+  padding: 20px 50px 30px 100px;
 }
 
 .text-about h2 {
   font-size: 50px;
 }
+
 .small-f {
   font-size: 12px;
   color: #0053df;
@@ -205,7 +205,6 @@ height: 300px;
 .margin {
   padding-inline: 60px;
 }
-
 
 .blue {
   color: #0053df;
@@ -217,7 +216,7 @@ footer {
   background-color: #0053df;
   width: 80vw;
   margin-inline: auto;
-  margin-block: 0;
+  margin-bottom: 30px;
 }
 
 footer p {
@@ -229,9 +228,7 @@ footer p {
 }
 
 @media screen and (max-width: 992px) {
-
   .text-about {
-    width: 400px;
     font-size: 16px;
     padding: 20px 30px 30px 20px;
     text-align: center;
@@ -243,9 +240,9 @@ footer p {
 }
 
 @media screen and (max-width: 500px) {
-  footer, header, .photos, .aboutme {
+  footer, header, .aboutme, .projects {
     width: 100%;
-    padding: 0;
+    padding: 2px;
   }
 
   header h1 {
@@ -259,7 +256,23 @@ footer p {
 
   .photo {
     width: 100%;
-    padding: 0 10px;
+  }
+
+  figure {
+    margin: 30px;
+  }
+
+  figcaption {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    z-index: 1;
+    left: -10px;
+    padding: 10px;
+    background-color: #0053df;
+    color: #fcefde;
+    font-weight: 600;
+    text-align: center;
   }
 }
 
