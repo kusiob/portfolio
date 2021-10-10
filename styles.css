@@ -177,6 +177,13 @@ figcaption {
   margin-block: 30px;
 }
 
+.projects a {
+  color: #fcefde;
+  letter-spacing: 3px;
+  cursor: url(cursor.png), pointer;
+  text-transform: uppercase;
+}
+
 .aboutme {
   background-color: #ff4b33;
   width: 80vw;
@@ -279,8 +286,8 @@ footer p {
 
 /* ANIMATION COFFEE*/
 .cls-36 {
-  -webkit-animation: slide-top 2s ease-in-out 1s infinite alternate-reverse forwards;
-  animation: slide-top 2s ease-in-out 1s infinite alternate-reverse forwards;
+  -webkit-animation: slide-top 1.5s ease-in-out 1.5s infinite alternate-reverse forwards;
+  animation: slide-top 1.5s ease-in-out 1.5s infinite alternate-reverse forwards;
 }
 
 @-webkit-keyframes slide-top {
